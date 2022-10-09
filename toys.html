@@ -6,196 +6,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <img src="#" alt="#">
-        <nav>
-            <ul>
-                <li>
+    <header class="header">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li class="header__item">
                     <a href="#">Blog</a>
                 </li>
-                <li>
-                    <a href="#">Catalog</a>
+                <li class="header__item">
+                    <a href="catalog.html">Catalog</a>
                 </li>
-                <li>
+                <li class="header__item">
                     <a href="#">About Us</a>
                 </li>
             </ul>
         </nav>
-        <button class="search"></button>
+        <button class="header__search"></button>
         <a href="#">Contact  Us</a>
     </header>
 
     <main>
-        <section>
-            <h1>Category Products</h1>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
+        <section class="breadcrumb">
+            <h1 class="breadcrumb__title">Category Products</h1>
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="index.html" class="breadcrumb__link">Home</a>
                 </li>
-                <li>
-                    <a href="#">Catalog</a>
+                <li class="breadcrumb__item">
+                    <a href="catalog.html" class="breadcrumb__link">Catalog</a>
                 </li>
-                <li>
-                    <a href="#">Toys</a>
+                <li class="breadcrumb__item">
+                    <p class="breadcrumb__text">Toys</p>
                 </li>
             </ul>
         </section>
             
-        <section>
-            <div>
+        <section class="filters">
+            <div class="filters__col">
                 <p>Cost</p>
                 <!--Здесь будет ползунок-->
             </div>
-            <div>
+            <div class="filters__col">
                 <p>Color</p>
-                <ul>
-                    <li><input type="checkbox">Black</li>
-                    <li><input type="checkbox">Blue</li>
-                    <li><input type="checkbox">Green</li>
-                    <li><input type="checkbox">White</li>
+                <ul class="filters__list">
+                    <li class="filters__item"><input type="checkbox" class="filters__checkbox">Black</li>
+                    <li class="filters__item"><input type="checkbox" class="filters__checkbox">Blue</li>
+                    <li class="filters__item"><input type="checkbox" class="filters__checkbox">Green</li>
+                    <li class="filters__item"><input type="checkbox" class="filters__checkbox">White</li>
                 </ul>
             </div>
-            <div>
+            <div class="filters__col">
                 <p>Delivery</p>
-                <ul>
-                    <li><input type="radio">Free shipping</li>
-                    <li><input type="radio">Fast shipping</li>
+                <ul class="filters__list">
+                    <li class="filters__item"><input type="radio" class="filters__radiobutton">Free shipping</li>
+                    <li class="filters__item"><input type="radio" class="filters__radiobutton">Fast shipping</li>
                 </ul>
             </div>
-            <div>
+            <div class="filters__col">
                 <p>Amount</p>
-                <ul>
-                    <li><input type="radio">0-5</li>
-                    <li><input type="radio">10-20</li>
-                    <li><input type="radio">20-50</li>
+                <ul class="filters__list">
+                    <li class="filters__item"><input type="radio" class="filters__radioslider">0-5</li>
+                    <li class="filters__item"><input type="radio" class="filters__radioslider">10-20</li>
+                    <li class="filters__item"><input type="radio" class="filters__radioslider">20-50</li>
                 </ul>
             </div>
-            <button>Apply</button>
+            <button class="button">Apply</button>
         </section>
 
-        <section>
-            <ul>
-                <li>
+        <section class="catalog">
+            <ul class="catalog__list">
+                <li class="catalog__item">
                     <img src="img/toys1.png" alt="#">
                     <a href="#">SHARKY BEAN BAG CHAIR COVER</a>
                     <p>$60.00 USD</p>
                 </li>
-                <li>
+                <li class="catalog__item">
                     <img src="img/toys2.png" alt="#">
                     <a href="#">BRASS DECO FRAMES</a>
                     <p>$66.00 USD</p>
                 </li>
-                <li>
+                <li class="catalog__item">
                     <img src="img/toys3.png" alt="#">
                     <a href="#">CIBO FULL APRON</a>
                     <p>$60.00 USD</p>
                 </li>
-                <li>
+                <li class="catalog__item">
                     <img src="img/toys4.png" alt="#">
                     <a href="#">GATCHA GATCHA GUMBALL MACHINE</a>
                     <p>$56.00 USD</p>
                 </li>
-                <li>
+                <li class="catalog__item">
                     <img src="img/toys5.png" alt="#">
                     <a href="#">CHRISTMAS ADVENT SCENTED CANDLE</a>
                     <p>$29.00 USD</p>
                 </li>
-                <li>
+                <li class="catalog__item">
                     <img src="img/toys6.png" alt="#">
                     <a href="#">TANGLE SPINNING TEA LIGHT</a>
                     <p>$56.00 USD</p>
                 </li>
             </ul>
-            <button>&lt;</button>
-            <ul>
-                <li>
+            <button class="catalog__button">&lt;</button>
+            <ul class="catalog__page-list">
+                <li class="catalog__page-link">
                     <a href="#">1</a>
                 </li>
-                <li>
+                <li class="catalog__page-link">
                     <a href="#">2</a>
                 </li>
-                <li>
+                <li class="catalog__page-link">
                     <a href="#">3</a>
                 </li>
-                <li>
+                <li class="catalog__page-link">
                     <a href="#">4</a>
                 </li>
             </ul>
-            <button>&gt;</button>
+            <button class="catalog__button">&gt;</button>
         </section>
     </main>
     
-    <footer>
-        <nav>
-            <h4>Navigation</h4>
-            <ul>
-                <li>
+    <footer class="footer">
+        <nav class="footer__navigation">
+            <h4 class="footer__title">Navigation</h4>
+            <ul class="footer__list">
+                <li class="footer__item">
                     <a href="#">About Us</a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="#">Blog</a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="#">Design Services</a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="#">Featured On</a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="#">2018 Holiday Catalog</a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="#">Shop By Designer</a>
                 </li>
             </ul>
         </nav>
-        <nav>
-            <h4>Customer Information</h4>
-            <ul>
-                <li>
+        <nav class="footer__navigation">
+            <h4 class="footer__title">Customer Information</h4>
+            <ul class="footer__list">
+                <li class="footer__item">
                     <a href="#">Contact Us</a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="#">Sale Exclusions</a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="#">Shipping & Returns</a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="#">Terms & Conditions</a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="#">Privacy Policy</a>
                 </li>
-                <li>
+                <li class="footer__item">
                     <a href="#">Search</a>
                 </li>
             </ul>
         </nav>
         <div>
-            <h4>Connect</h4>
+            <h4 class="footer__title">Connect</h4>
             <input type="text" name="#" id="#">
-            <a href="#">Join</a>
-            <ul>
-                <li>
+            <a href="#" class="button">Join</a>
+            <ul class="footer__communities">
+                <li class="footer__social">
                     <img src="img/facebook.svg" alt="Facebook">
                 </li>
-                <li>
+                <li class="footer__social">
                     <img src="img/twitter.svg" alt="Twitter">
                 </li>
-                <li>
+                <li class="footer__social">
                     <img src="img/pinterest.svg" alt="Pinterest">
                 </li>
-                <li>
+                <li class="footer__social">
                     <img src="img/instagram.svg" alt="Instagram">
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="footer__additional">
             <p>Company Rating</p>
+            <!--Здесь будут звёздочки-->
             <p>Copyright © 2018 Dlk • Design Life Kids</p>
-            <a href="#">Web Design — Direct Line Development</a>
+            <a href="#" class="footer__reference">Web Design — Direct Line Development</a>
         </div>
     </footer>
 </body>
