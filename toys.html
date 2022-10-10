@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/toys.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Toys</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header wrapper">
         <img src="img/logo.png" alt="Logo" class="logo">
         <nav class="header__menu">
-            <ul class="header__list">
+            <ul class="header__list undotted">
                 <li class="header__item">
                     <a href="#">Blog</a>
                 </li>
@@ -28,9 +33,9 @@
     </header>
 
     <main>
-        <section class="breadcrumb">
+        <section class="breadcrumb wrapper">
             <h1 class="breadcrumb__title">Category Products</h1>
-            <ul class="breadcrumb__list">
+            <ul class="breadcrumb__list undotted">
                 <li class="breadcrumb__item">
                     <a href="index.html" class="breadcrumb__link">Home</a>
                 </li>
@@ -43,14 +48,14 @@
             </ul>
         </section>
             
-        <section class="filters">
+        <section class="filters wrapper">
             <div class="filters__col">
                 <p>Cost</p>
                 <!--Здесь будет ползунок-->
             </div>
             <div class="filters__col">
                 <p>Color</p>
-                <ul class="filters__list">
+                <ul class="filters__list undotted">
                     <li class="filters__item"><input type="checkbox" class="filters__checkbox">Black</li>
                     <li class="filters__item"><input type="checkbox" class="filters__checkbox">Blue</li>
                     <li class="filters__item"><input type="checkbox" class="filters__checkbox">Green</li>
@@ -59,14 +64,14 @@
             </div>
             <div class="filters__col">
                 <p>Delivery</p>
-                <ul class="filters__list">
+                <ul class="filters__list undotted">
                     <li class="filters__item"><input type="radio" class="filters__radiobutton">Free shipping</li>
                     <li class="filters__item"><input type="radio" class="filters__radiobutton">Fast shipping</li>
                 </ul>
             </div>
             <div class="filters__col">
                 <p>Amount</p>
-                <ul class="filters__list">
+                <ul class="filters__list undotted">
                     <li class="filters__item"><input type="radio" class="filters__radioslider">0-5</li>
                     <li class="filters__item"><input type="radio" class="filters__radioslider">10-20</li>
                     <li class="filters__item"><input type="radio" class="filters__radioslider">20-50</li>
@@ -75,8 +80,8 @@
             <button class="button">Apply</button>
         </section>
 
-        <section class="catalog">
-            <ul class="catalog__list">
+        <section class="catalog wrapper">
+            <ul class="catalog__list undotted">
                 <li class="catalog__item">
                     <img src="img/toys1.png" alt="#">
                     <a href="#">SHARKY BEAN BAG CHAIR COVER</a>
@@ -109,7 +114,7 @@
                 </li>
             </ul>
             <button class="catalog__button">&lt;</button>
-            <ul class="catalog__page-list">
+            <ul class="catalog__page-list undotted">
                 <li class="catalog__page-link">
                     <a href="#">1</a>
                 </li>
@@ -130,7 +135,7 @@
     <footer class="footer">
         <nav class="footer__navigation">
             <h4 class="footer__title">Navigation</h4>
-            <ul class="footer__list">
+            <ul class="footer__list undotted">
                 <li class="footer__item">
                     <a href="#">About Us</a>
                 </li>
@@ -153,7 +158,7 @@
         </nav>
         <nav class="footer__navigation">
             <h4 class="footer__title">Customer Information</h4>
-            <ul class="footer__list">
+            <ul class="footer__list undotted">
                 <li class="footer__item">
                     <a href="#">Contact Us</a>
                 </li>
@@ -178,7 +183,7 @@
             <h4 class="footer__title">Connect</h4>
             <input type="text" name="#" id="#">
             <a href="#" class="button">Join</a>
-            <ul class="footer__communities">
+            <ul class="footer__communities undotted">
                 <li class="footer__social">
                     <img src="img/facebook.svg" alt="Facebook">
                 </li>
