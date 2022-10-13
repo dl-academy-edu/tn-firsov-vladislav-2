@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
 
@@ -33,11 +33,34 @@
     </header>
 
     <main>
-        <section class="banner wrapper">
-            <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
-            <p>Designed in Slovenia</p>
-            <a href="#" class="button">EXPLORE NOW</a>
-            <div>Free (continental) USA shipping on all orders of $100 USD or more!</div>
+        <section class="banner">
+            <div class="wrapper">
+                <!-- <p class="banner__slide-num">01</p>
+                <ul class="undotted">
+                    <li>
+                        <input type="radio" name="" id="">
+                    </li>
+                    <li>
+                        <input type="radio" name="" id="">
+                    </li>
+                    <li>
+                        <input type="radio" name="" id="">
+                    </li>
+                    <li>
+                        <input type="radio" name="" id="">
+                    </li>
+                </ul> -->
+                <div class="banner__content">
+                    <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
+                    <p class="banner__origin">Designed in Slovenia</p>
+                    <a href="#" class="button">EXPLORE NOW</a>
+                </div>
+            </div>
+            <div class="banner__bottom">
+                <p>
+                    Free (continental) USA shipping on all orders of $100 USD or more!
+                </p>
+            </div>
         </section>
 
         <section class="categories wrapper">
@@ -56,20 +79,24 @@
                     <h3 class="categories__name">ACCESSORIES</h3>
                 </li>
             </ul>
-            <button class="categories__lbutton">&lt;</button>
-            <button class="categories__rbutton">&gt;</button>
-            <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+            <div class="categories__pagination">
+                <button class="categories__lbutton">&lt;</button>
+                <button class="categories__rbutton">&gt;</button>
+                <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+            </div>
         </section>
 
         <section class="advantages wrapper">
             <img src="img/example.jpg" alt="Be confident">
-            <h2 class="advantages__title">Delivery</h2>
-            <button class="advantages__button">Delivery</button>
-            <button class="advantages__button">Guarantee</button>
-            <button class="advantages__button">Credit</button>
-            <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-            <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-            <a href="#" class="button">LEARN MORE</a>
+            <div class="advantages__content">
+                <h2 class="advantages__title">Delivery</h2>
+                <p class="advantages__tagline">Delivery</p>
+                <p class="advantages__tagline">Guarantee</p>
+                <p class="advantages__tagline">Credit</p>
+                <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                <a href="#" class="button">LEARN MORE</a>
+            </div>
         </section>
 
         <section class="awards wrapper">

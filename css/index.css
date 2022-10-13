@@ -1,0 +1,67 @@
+.banner__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    margin: 0 0 20px;
+    width: 40%;
+}
+
+.banner__origin {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.banner__bottom {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 90px;
+}
+
+.banner__content {
+    margin-left: 133px;
+}
+
+.banner .wrapper {
+    background-image: url("../img/banner.png");
+    background-position: bottom right 100px;
+    background-repeat: no-repeat;
+    padding-top: 218px;
+    padding-bottom: 89px;
+}
+
+.categories__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    margin: 0px 0px 30px;
+}
+
+.categories__list {
+    display: flex;
+    margin-bottom: 33px;
+}
+
+.categories__pagination {
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.advantages {
+    display: flex;
+}
+
+.awards__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
