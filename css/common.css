@@ -164,6 +164,10 @@ body {
     background-blend-mode: multiply;
 }
 
+.categories__item:last-child {
+    margin-right: 0;
+}
+
 .categories__name {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -326,8 +330,7 @@ body {
 .logo:hover,
 .header__item:hover,
 .footer__social:hover,
-.footer a:hover,
-.footer p:hover {
+.footer__item:hover {
     opacity: 0.5;
 }
 
@@ -335,7 +338,6 @@ body {
 .logo:active,
 .header__item:active,
 .footer__social:active,
-.footer a:active,
-.footer p:active {
+.footer__item:active {
     opacity: 0.25;
 }
