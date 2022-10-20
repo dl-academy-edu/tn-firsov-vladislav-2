@@ -68,6 +68,51 @@ body {
     cursor: pointer;
 }
 
+.breadcrumb {
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumb__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.breadcrumb__list {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.breadcrumb__item {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    padding-right: 28px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.breadcrumb__item::after {
+    content: url('data:image/svg+xml; utf8, <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="%231E0606"/></svg>');
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.breadcrumb__item:last-child {
+    opacity: 0.5;
+}
+
+.breadcrumb__item:last-child:after {
+    display: none;
+}
+
 .button {
     background: #000000;
     color: #fff;
@@ -344,4 +389,29 @@ body {
 .footer__social:active,
 .footer__item:active {
     opacity: 0.25;
+}
+
+.field-2-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+input,
+textarea {
+    resize: none;
+    outline: none;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper_horizontal {
+    flex-direction: row;
+}
+
+label {
+    font-size: 14px;
+    line-height: 19px
 }

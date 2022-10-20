@@ -1,0 +1,11 @@
+.contact__content {
+    display: flex;
+}
+
+.contact__form {
+    width: 57%;
+    background: #E5EAF8;
+    padding: 42px 40px;
+    margin-right: 120px;
+    margin-bottom: 60px;
+}

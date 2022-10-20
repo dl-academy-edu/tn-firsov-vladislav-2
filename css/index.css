@@ -143,12 +143,11 @@ input[type="radio"] {
 }
 
 
-.categories__lbutton,
-.categories__rbutton {
+.categories__button {
     width: 37px;
     height: 37px;
     background: rgba(112, 187, 220, 0.2);
-    padding: 3px 10px 4px;
+    padding: 4px 10px;
     border: none;
     cursor: pointer;
     display: flex;
@@ -160,31 +159,16 @@ input[type="radio"] {
     margin: 0;
 }
 
-.categories__lbutton {
+.categories__button {
     margin-right: 6px;
-    content: url('data:image/svg+xml; utf8, <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 2L3 15L16 28" stroke="%231E0606" stroke-width="4"/></svg>');
 }
 
-.categories__rbutton {
-    margin-right: 20px;
-    content: url('data:image/svg+xml; utf8, <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2L15 15L2 28" stroke="%231E0606" stroke-width="4"/></svg>');
-
+.categories__button:hover path {
+    stroke: #C29974
 }
 
-.categories__lbutton:hover {
-    content: url('data:image/svg+xml; utf8, <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 2L3 15L16 28" stroke="%23C29974" stroke-width="4"/></svg>');
-}
-
-.categories__lbutton:active {
-    content: url('data:image/svg+xml; utf8, <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 2L3 15L16 28" stroke="%23D4B79E" stroke-width="4"/></svg>');
-}
-
-.categories__rbutton:hover {
-    content: url('data:image/svg+xml; utf8, <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2L15 15L2 28" stroke="%23C29974" stroke-width="4"/></svg>');
-}
-
-.categories__rbutton:active {
-    content: url('data:image/svg+xml; utf8, <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2L15 15L2 28" stroke="%23D4B79E" stroke-width="4"/></svg>');
+.categories__button:active path {
+    stroke: #D4B79E
 }
 
 .categories__name:hover {
