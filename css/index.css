@@ -86,10 +86,6 @@
     top: 101px;
 }
 
-input[type="radio"] {
-    display: none;
-}
-
 .banner__slide-label {
     margin-bottom: 11px;
     display: block;
