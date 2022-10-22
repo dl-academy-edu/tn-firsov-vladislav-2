@@ -304,3 +304,13 @@
 .information__map {
     position: absolute;
 }
+
+.bg-music {
+    position: relative;
+}
+
+.bg-music__controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

@@ -162,7 +162,7 @@
                 <h2 class="information__title">Contacts</h2>
                 <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                     <!-- <img src="img/map.png" alt="How to find us" class="information__map"> -->
-                <iframe class="information__map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3153.5965877215704!2d-122.41901342093415!3d37.77605630028855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1666464718436!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="information__map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3153.5965877215704!2d-122.41901342093415!3d37.77605630028855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1666464718436!5m2!1sru!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </article>
     </main>
@@ -283,6 +283,17 @@
             </div>
         </div>
     </footer>
-
+    <div class="bg-music">
+        <audio type="audio/mp3" id="player" autoplay loop>
+            <source src="media/bgmusic.mp3" type="audio/mpeg">
+            Тег audio не поддерживается вашим браузером.
+        </audio>
+        <div class="bg-music__controls">
+            <button class="bg-music__play button" onclick="document.getElementById('player').play()">></button>
+            <button class="bg-music__pause button" onclick="document.getElementById('player').pause()">II</button>
+            <!-- <button class="bg-music__volup" onclick="document.getElementById('player').volume+=0.1">VOL+</button>
+            <button class="bg-music__voldown" onclick="document.getElementById('player').volume-=0.1">VOL-</button> -->
+        </div> 
+    </div>
 </body>
 </html>
