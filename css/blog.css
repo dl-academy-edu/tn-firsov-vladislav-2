@@ -1,0 +1,72 @@
+:root {
+    --children: calc(vw / 380 px) n;
+}
+
+.blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px 50px;
+}
+
+.blog__item {
+    width: 380px;
+    margin: 0 10px 40px;
+}
+
+.blog__date {
+    color: #818181;
+    mix-blend-mode: normal;
+    margin-bottom: 7px;
+}
+
+.blog__list img {
+    margin-bottom: 20px;
+}
+
+.blog__list h2 {
+    margin-bottom: 15px;
+}
+
+.blog__navigation,
+.blog__pagination {
+    display: flex;
+}
+
+.blog__navigation {
+    margin-bottom: 60px;
+}
+
+.blog__pagination {
+    margin: 0 auto;
+}
+
+.blog__button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.blog__button:hover path {
+    stroke: #C29974;
+}
+
+.blog__button:active path {
+    stroke: #D4B79E;
+}
+
+.blog__pagination-link {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-right: 64px;
+}
+
+.blog__pagination-link:last-child {
+    margin-right: 0;
+}
+
+.blog__pagination-link:first-child a {
+    /* Красим просто для красоты */
+    color: #C29974;
+}
