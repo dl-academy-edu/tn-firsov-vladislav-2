@@ -295,5 +295,43 @@
             <button class="bg-music__voldown" onclick="document.getElementById('player').volume-=0.1">VOL-</button> -->
         </div> 
     </div>
+    <div class="modal">
+        <form action="#" class="contact__form">
+            <div class="input-wrapper">
+                <label for="input-name" placeholder="Ivan Ivanov">Name</label>
+                <input type="text" id="input-name" placeholder="Ivan Ivanov">
+            </div>
+
+            <div class="field-2-column">
+                <div class="input-wrapper">
+                    <label for="input-phone">Phone</label>
+                    <input type="tel" id="input-phone" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="input-email">Email</label>
+                    <input type="email" id="input-email">
+                </div>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="textarea">Message</label>
+                <textarea id="textarea" cols="30" rows="5"></textarea>
+            </div>
+
+            <div class="input-wrapper input-wrapper_horizontal">
+                <input type="checkbox" name="input-agree" id="agree" class="checkbox-input">
+                <label for="agree" class="checkbox-label">By clicking on the button, you consent to the processing of your personal data</label>
+            </div>
+            
+            <button class="button" type="submit">SUBMIT</button>
+
+        </form>
+        <div class="contact__text">
+            <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+            <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+            <p>An expert is waiting to help you!</p>
+        </div>
+    </div>
 </body>
 </html>
