@@ -171,10 +171,6 @@
     stroke: #D4B79E
 }
 
-.categories__name:hover {
-    text-decoration: underline;
-}
-
 .advantages {
     display: flex;
     margin-bottom: 91px;

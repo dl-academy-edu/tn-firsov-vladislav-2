@@ -149,6 +149,10 @@ body {
     margin: 0px 0px 30px;
 }
 
+.categories__name:hover {
+    text-decoration: underline;
+}
+
 .categories__list {
     display: flex;
     margin-bottom: 33px;

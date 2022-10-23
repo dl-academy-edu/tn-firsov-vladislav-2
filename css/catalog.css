@@ -1,0 +1,32 @@
+.categories__list {
+    flex-wrap: wrap;
+    margin-left: 200px;
+}
+
+.inner-wrapper {
+    margin-left: 200px;
+    max-width: 680px;
+}
+
+.categories__item:first-child {
+    margin-left: -200px;
+    margin-bottom: 23px;
+}
+
+.categories__list,
+.description {
+    margin-bottom: 55px;
+}
+
+.description p {
+    margin-bottom: 15px;
+}
+
+.description__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
