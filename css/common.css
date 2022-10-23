@@ -385,6 +385,7 @@ input[type="checkbox"] {
     width: 0;
     height: 0;
     position: absolute;
+    opacity: 0;
 }
 
 .checkbox-label,
@@ -426,9 +427,13 @@ input[type="checkbox"] {
     opacity: 0;
 }
 
-.checkbox-input:checked + .checkbox-label:after,
-.radio-input:checked + .radio-label:after {
+.checkbox-input:checked + .checkbox-label::after,
+.radio-input:checked + .radio-label::after {
     opacity: 1;
+}
+
+.checkbox-input:focus + .checkbox-label {
+    outline: auto;
 }
 
 input,
@@ -448,6 +453,11 @@ textarea {
 input::placeholder,
 textarea::placeholder {
     color: #1E0606;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid #C29974;
 }
 
 .input-wrapper {
