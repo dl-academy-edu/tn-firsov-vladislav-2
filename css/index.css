@@ -132,6 +132,10 @@
     opacity: 1;
 }
 
+.banner__radio:focus + .banner__slide-label {
+    outline: auto;
+}
+
 .categories__pagination {
     display: flex;
     align-items: center;
@@ -218,6 +222,10 @@
 
 .advantages__radio:checked + .advantages__label::after {
     opacity: 1;
+}
+
+.advantages__radio:focus + .advantages__label::after {
+    outline: auto;
 }
 
 .advantages__radio:checked + .advantages__label {

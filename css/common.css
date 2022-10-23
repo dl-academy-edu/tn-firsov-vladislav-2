@@ -298,10 +298,6 @@ body {
     margin-right: auto;
 }
 
-.footer__stars-radio{
-    display: none;
-}
-
 .footer__star {
     margin-right: 3px;
 
@@ -336,6 +332,10 @@ body {
 .footer__star:hover ~ .footer__rating-text,
 .footer__rating-text:hover {
     color: #836E5B;
+}
+
+.footer__stars-radio:focus + .footer__star {
+    outline: auto;
 }
 
 .footer__input {
@@ -378,7 +378,9 @@ body {
 
 input[type="radio"],
 input[type="checkbox"] {
-    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
 }
 
 .checkbox-label,
