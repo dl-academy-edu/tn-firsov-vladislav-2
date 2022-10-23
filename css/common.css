@@ -352,7 +352,7 @@ body {
 
 .footer__input:focus {
     outline: none;
-    border: 1px solid #FFFDFD;
+    outline: 1px solid #FFFDFD;
 }
 
 .footer__input::placeholder {
