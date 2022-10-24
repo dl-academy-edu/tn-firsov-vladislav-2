@@ -220,7 +220,7 @@
     opacity: 1;
 }
 
-.advantages__radio:focus + .advantages__label::after {
+.advantages__radio:focus-visible + .advantages__label::after {
     outline: auto;
 }
 
