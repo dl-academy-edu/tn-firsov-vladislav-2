@@ -1,0 +1,28 @@
+:root {
+    --children: calc(vw / 380 px) n;
+}
+
+.blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px 50px;
+}
+
+.blog__item {
+    width: 380px;
+    margin: 0 10px 40px;
+}
+
+.blog__date {
+    color: #818181;
+    mix-blend-mode: normal;
+    margin-bottom: 7px;
+}
+
+.blog__list img {
+    margin-bottom: 20px;
+}
+
+.blog__list h2 {
+    margin-bottom: 15px;
+}
