@@ -1,24 +1,8 @@
 .banner .wrapper {
-    /* background-image: url("../img/banner.png"); */
-    /* background-position: top right 100px;
-    background-repeat: no-repeat; */
     position: relative;
     top: -20px;
     padding-top: 89px;
 }
-
-/* .banner .wrapper::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 1180px;
-    height: 411px;
-    top: 89px;
-    left: 0;
-    background-repeat: no-repeat;
-    background-color: #EEE4DB;
-    z-index: -2;
-} */
 
 .banner__title {
     font-family: 'Montserrat';
@@ -350,40 +334,3 @@
     right: -25px;
     padding: 0;
 }
-
-/* Modal Header */
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-  }
-  
-  /* Modal Body */
-  .modal-body {padding: 2px 16px;}
-  
-  /* Modal Footer */
-  .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
-  }
-  
-  /* Add Animation */
-  @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-  }
-
