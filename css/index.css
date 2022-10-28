@@ -1,3 +1,7 @@
+.banner {
+    margin-bottom: 70px;
+}
+
 .banner .wrapper {
     position: relative;
     top: -20px;
@@ -9,7 +13,8 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 110%;
-    margin-bottom: 20px;
+    margin-top: 3px;
+    margin-bottom: 17px;
     width: 40%;
 }
 
@@ -42,8 +47,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 11px 0;
-    margin-bottom: 90px;
+    padding: 12px 0;
     background-color: #C29974;
 }
 
@@ -71,7 +75,7 @@
 }
 
 .banner__slide-label {
-    margin-bottom: 11px;
+    margin-bottom: 14px;
     display: block;
     position: relative;
     cursor: pointer;
@@ -140,7 +144,8 @@
 }
 
 .categories__description {
-    margin: 0;
+    margin-left: 15px;
+    max-width: 50%;
 }
 
 .categories__button {
@@ -167,16 +172,24 @@
     font-size: 38px;
     line-height: 46px;
     text-transform: uppercase;
-    margin-bottom: 17px;
+    margin-bottom: 6px;
 }
 
 .advantages img {
     margin-right: 120px;
 }
 
+.advantages__content {
+    padding-top: 31px;
+}
+
 .advantages__item {
-    padding: 11px 0 11px;
+    padding: 10px 0;
     position: relative;
+}
+
+.advantages__list {
+    margin-bottom: 22px;
 }
 
 .advantages__label {
@@ -222,18 +235,19 @@
 }
 
 .awards {
-    margin-bottom: 90px;
+    margin-bottom: 84px;
 }
 
 .awards__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 90px;
+    align-items: center;
 }
 
 .information {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 155px;
 }
 
 .information p {
@@ -253,12 +267,10 @@
 .information__about {
     margin-right: 57px;
     padding-bottom: 27px;
-    margin-bottom: 155px;
 }
 
 .information__contacts {
-    padding-bottom: 82px;
-    margin-bottom: 174px;
+    padding-bottom: 72px;
 }
 
 .information__title {
@@ -267,7 +279,6 @@
     font-size: 38px;
     line-height: 46px;
     text-transform: uppercase;
-    margin-bottom: 10px;
     position: absolute;
     top: -26px;
 }
@@ -281,12 +292,8 @@
     margin-bottom: 10px;
 }
 
-.information__contacts .information__title {
-    margin-bottom: 20px;
-}
-
 .information__contacts p {
-    margin-bottom: 30px;
+    margin: 10px 0 30px;
 }
 
 .information__map {

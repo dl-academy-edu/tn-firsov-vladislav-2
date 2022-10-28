@@ -41,6 +41,10 @@ body {
     margin: 0 auto;
 }
 
+.logo {
+    line-height: 0;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -71,7 +75,7 @@ body {
 }
 
 .header__search {
-    margin-right: 23px;
+    margin-right: 33px;
     background-color: transparent;
     border: none;
     width: 17px;
@@ -166,7 +170,7 @@ body {
 
 .categories__list {
     display: flex;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
 }
 
 .categories__item {
@@ -261,6 +265,7 @@ body {
 .footer__title {
     font-weight: 400;
     line-height: 22px;
+    font-size: 16px;
     color: #AAAAAA;
     position: relative;
     border-bottom: 1px solid #666666;
@@ -288,6 +293,14 @@ body {
     flex-direction: column;
     width: 380px;
     margin-right: 20px;
+}
+
+.footer__column:last-child {
+    margin-right: 0;
+}
+
+.footer__top {
+    margin-bottom: 13px;
 }
 
 .footer__bottom {
@@ -320,7 +333,7 @@ body {
 }
 
 .footer__star {
-    margin-right: 3px;
+    margin-right: 6px;
 
     /* По-другому не хотят стоять ровно */
     display: flex;
@@ -338,12 +351,8 @@ body {
     fill: #836E5B;
 }
 
-.footer__list {
-    margin-bottom: 28px;
-}
-
 .footer__rating-text {
-    margin-right: 25px;
+    margin-right: 28px;
 }
 
 .footer__stars-radio:checked ~ .footer__rating-text {
@@ -365,6 +374,8 @@ body {
     color: #EBEBEB;
     border: none;
     padding: 9px 15px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .footer__input:focus {
