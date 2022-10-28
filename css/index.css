@@ -188,6 +188,11 @@
     position: relative;
 }
 
+/* Один пункт разуплотнить... */
+.advantages__item:first-child label {
+    letter-spacing: 1px;
+}
+
 .advantages__list {
     margin-bottom: 22px;
 }
@@ -235,7 +240,7 @@
 }
 
 .awards {
-    margin-bottom: 84px;
+    margin-bottom: 89px;
 }
 
 .awards__list {
