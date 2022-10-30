@@ -330,6 +330,7 @@
 .modal__form {
     position: relative;
     background: #E5EAF8;
+    width: 680px;
     padding: 42px 40px;
 }
 
@@ -345,4 +346,12 @@
     top: 0;
     right: -25px;
     padding: 0;
+}
+
+.input-wrapper {
+    margin-right: 0;
+}
+
+.field-2-column .input-wrapper {
+    max-width: 48.5%;
 }
