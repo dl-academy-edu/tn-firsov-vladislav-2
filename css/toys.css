@@ -6,12 +6,12 @@
 .toys__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px 53px;
+    margin: 0 -10px 31px;
 }
 
 .toys__item {
     max-width: 380px;
-    margin: 0 10px 20px;
+    margin: 0 10px 45px;
 }
 
 .filters .wrapper {
@@ -22,7 +22,7 @@
 
 .filters {
     background: rgba(125, 151, 218, 0.2);
-    padding: 42px 0 42px;
+    padding: 44px 0 26px;
     margin-bottom: 60px;
 }
 
@@ -83,13 +83,21 @@ legend {
     margin-right: -0.75em;
 }
 
+.checkbox-label {
+    padding-left: 29px;
+}
+
+.radio-label {
+    padding-left: 30px;
+}
+
 .toys__name {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .toys__price {
@@ -100,7 +108,30 @@ legend {
 }
 
 .toys__item img {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
+}
+
+.filters__cost {
+    margin-right: 107px;
+}
+
+.filters__color {
+    /* margin-right: 130px; */
+    min-width: 198px;
+}
+
+.filters__delivery {
+    /* margin-right: 71px; */
+    min-width: 200px;
+}
+
+.filters__delivery .filters__item {
+    margin-bottom: 10px;
+}
+
+.filters__amount {
+    /* margin-right: 57px; */
+    min-width: 300px;
 }
 
 /*generated with Input range slider CSS style generator (version 20211225)
@@ -119,6 +150,7 @@ input[type=range].styled-slider.slider-progress {
     --range: calc(var(--max) - var(--min));
     --ratio: calc((var(--value) - var(--min)) / var(--range));
     --sx: calc(0.5 * 24px + var(--ratio) * (100% - 24px));
+    margin-left: 6px;
 }
 
 /*webkit*/
@@ -177,7 +209,7 @@ input[type=range].styled-slider::-moz-range-thumb {
     height: max(calc(24px - 8px - 8px),0px);
     border-radius: 100%;
     background: #fff;
-    border: 8px solid #C29974;
+    border: 9px solid #C29974;
     box-shadow: none;
 }
 
@@ -235,7 +267,7 @@ input[type=range].styled-slider::-ms-thumb {
     height: 24px;
     border-radius: 100%;
     background: #fff;
-    border: 8px solid #C29974;
+    border: 9px solid #C29974;
     box-shadow: none;
     margin-top: 0;
     box-sizing: border-box;

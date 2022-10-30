@@ -94,7 +94,7 @@ body {
     font-size: 40px;
     line-height: 49px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 }
 
 .breadcrumb__list {
@@ -108,8 +108,9 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
+    letter-spacing: -1.5px;
     padding-right: 28px;
-    margin-right: 20px;
+    margin-right: 22px;
     position: relative;
 }
 
@@ -314,6 +315,7 @@ body {
 
 .footer__join {
     margin-bottom: 25px;
+    margin-top: -4px;
 }
 
 .footer__reference {
@@ -408,6 +410,10 @@ body {
     justify-content: space-between;
 }
 
+.field-2-column * {
+    width: 100%;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
     width: 0;
@@ -439,10 +445,10 @@ input[type="checkbox"] {
 
 .checkbox-label:before,
 .radio-label:before {
-    bottom: 0;
+    bottom: 1px;
     left: 0;
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
     border: 2px solid #C29974;
     border-radius: 3px;
 }
@@ -483,7 +489,7 @@ textarea {
     outline: none;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 14px 20px 11px;
+    padding: 13px 20px 11px;
     font-size: 18px;
     line-height: 25px;
 
@@ -505,11 +511,15 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-right: 21px;
 }
 
 .input-wrapper_horizontal {
     flex-direction: row;
+}
+
+.input-wrapper label {
+    margin-bottom: 3px;
 }
 
 fieldset {
@@ -529,7 +539,7 @@ label {
 
 .pagination {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
 }
 
 .pagination-pages {
@@ -541,6 +551,7 @@ label {
     border: none;
     cursor: pointer;
     background: none;
+    margin-top: -6px;
 }
 
 .pagination-button:hover path {
@@ -556,7 +567,7 @@ label {
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
-    margin-right: 64px;
+    margin-right: 65px;
 }
 
 .pagination-link:last-child {
