@@ -52,12 +52,11 @@ body {
 }
 
 .logo__image::after {
-    content: '';
+    content: attr(alt);
     display: block;
     height: 52px;
     width: 100px;
     background: #BBB;
-    mix-blend-mode: overlay;
     position: absolute;
     left: 0;
     top: 0;
@@ -344,6 +343,18 @@ body {
 .footer__social {
     margin-right: 10px;
     cursor: pointer;
+    position: relative;
+}
+
+.footer__social img::after {
+    content: attr(alt);
+    display: block;
+    height: 30px;
+    width: 100%;
+    background: #BBB;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .footer__rating {
