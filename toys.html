@@ -60,7 +60,8 @@
             <div class="wrapper">
                 <fieldset class="filters__cost">
                     <legend>Cost</legend>
-                    <Input class="styled-slider slider-progress" type="range" value="0" min="0" max="1000">
+                    <label for="cost" class="hidden-text">Cost</label>
+                    <input class="styled-slider slider-progress" type="range" value="0" min="0" max="1000" id="cost">
                         <script>
                             for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
                             e.style.setProperty('--value', e.value);
@@ -257,6 +258,7 @@
                     <h3 class="footer__title">Connect</h3>
                     <div class="footer__join">
                         <input type="email" name="joi" id="join" placeholder="Email" class="footer__input">
+                        <label for="join" class="hidden-text">Join</label>
                         <a href="#" class="button">Join</a>
                     </div>
                     <ul class="footer__communities undotted">
