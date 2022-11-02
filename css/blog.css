@@ -13,6 +13,11 @@
     margin: 0 10px 33px;
 }
 
+.blog__item a:hover h2,
+.blog__item a:active h2 {
+    text-decoration: underline;
+}
+
 .blog__img {
     width: 380px;
     height: 220px;

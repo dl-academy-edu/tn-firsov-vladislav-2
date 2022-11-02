@@ -146,6 +146,10 @@ body {
     display: none;
 }
 
+.breadcrumb__item:hover:not(.breadcrumb__item:last-child) {
+    text-decoration: underline;
+}
+
 .button {
     background: #000000;
     color: #fff;
@@ -171,6 +175,7 @@ body {
 
 .button:disabled {
     background: #C7C1C1;
+    cursor: default;
 }
 
 .categories__title {
@@ -458,6 +463,11 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
+.checkbox-label:hover,
+.radio-label:hover {
+    text-decoration: underline;
+}
+
 .checkbox-label:before,
 .checkbox-label:after,
 .radio-label:before,
@@ -497,9 +507,40 @@ input[type="checkbox"] {
 
 .radio-label:after {
     content: url('data:image/svg+xml; utf8, <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="5" fill="%23C29974" stroke="%23C29974" stroke-width="2"/></svg>');
-    bottom: 0;
+    bottom: 1px;
     left: 5px;
     opacity: 0;
+}
+
+fieldset:disabled *:hover {
+    text-decoration: none;
+}
+
+fieldset:disabled .radio-label,
+fieldset:disabled .checkbox-label,
+fieldset:disabled .checkbox-label::before,
+fieldset:disabled .radio-label::before,
+.radio-input:disabled + .radio-label,
+.radio-input:disabled + .radio-label::before,
+.checkbox-input:disabled + .checkbox-label,
+.checkbox-input:disabled + .checkbox-label::before {
+    opacity: 0.5;
+    cursor: default;
+}
+
+fieldset:disabled .radio-label.radio-label::after,
+fieldset:disabled .checkbox-label.checkbox-label::after,
+.radio-input:disabled + .radio-label.radio-label::after,
+.checkbox-input:disabled + .checkbox-label.checkbox-label::after {
+    opacity: 0;
+    cursor: default;
+}
+
+textarea:disabled,
+input[type="text"]:disabled,
+input[type="tel"]:disabled {
+    border: 1px solid #EBEBEB;
+    background: #FFFFFF;
 }
 
 .checkbox-input:checked + .checkbox-label::after,

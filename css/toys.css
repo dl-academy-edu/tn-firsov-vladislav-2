@@ -1,5 +1,5 @@
 .toys__pagination,
-.filter__slider {
+.filters__slider {
     display: flex;
 }
 
@@ -30,14 +30,6 @@
     margin-bottom: 15px;
 }
 
-.filters__slider-item {
-    background: #FFFFFF;
-    padding: 7px 0px 6px;
-    text-align: center;
-    width: 80px;
-    position: relative;
-}
-
 .toys__apply-button {
     margin-right: 85px;
     margin-top: 37px;
@@ -54,23 +46,32 @@ legend {
 
 .radioslider-label {
     cursor: pointer;
-}
-
-.radioslider-label::after {
-    content: '';
     display: block;
-    position: absolute;
     width: 80px;
     height: 35px;
-    top: 0;
-    left: 0;
-    background: #F3D0DB;
-    opacity: 0;
-    mix-blend-mode: multiply;
+    text-align: center;
+    padding: 7px 0px 6px;
+    background: #FFFFFF;
 }
 
-.radioslider:checked + .radioslider-label::after {
-    opacity: 1;
+.radioslider-label:hover {
+    opacity: 0.6;
+    background: #F3D0DB;
+}
+
+.radioslider:disabled + .radioslider-label,
+fieldset:disabled .radio-label {
+    opacity: 0.5;
+    cursor: default;
+}
+
+fieldset:disabled .radioslider-label {
+    pointer-events: none;
+}
+
+
+.radioslider:checked + .radioslider-label {
+    background: #F3D0DB;
 }
 
 .radioslider:focus-visible + .radioslider-label::after {
@@ -122,6 +123,35 @@ legend {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.toys__item a {
+    position: relative;
+}
+
+.toys__item a:hover::after,
+.toys__item a:active::after {
+    content: "learn more";
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 104px);
+    left: calc(50% - 104px);
+    height: 207px;
+    width: 207px;
+    background-color: #E8ECF9;
+    opacity: 0.9;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 207px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.toys__item a:active::after {
+    opacity: 0.67;
 }
 
 .filters__cost {
@@ -265,11 +295,7 @@ input[type=range].styled-slider.slider-progress:active::-moz-range-track {
 }
 
   /*ms*/
-input[type=range].styled-slider::-ms-fill-upper {
-    background: transparent;
-    border-color: transparent;
-}
-
+input[type=range].styled-slider::-ms-fill-upper,
 input[type=range].styled-slider::-ms-fill-lower {
     background: transparent;
     border-color: transparent;
