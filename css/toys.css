@@ -109,6 +109,19 @@ legend {
 
 .toys__item img {
     margin-bottom: 31px;
+    width: 380px;
+    height: 385px;
+    position: relative;
+}
+
+.toys__item img::after {
+    content: attr(alt);
+    width: 380px;
+    height: 385px;
+    background-color: #F8D0A1;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .filters__cost {

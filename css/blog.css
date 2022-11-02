@@ -13,6 +13,22 @@
     margin: 0 10px 33px;
 }
 
+.blog__img {
+    width: 380px;
+    height: 220px;
+    position: relative;
+}
+
+.blog__img::after {
+    content: attr(alt);
+    width: 380px;
+    height: 220px;
+    background-color: #DEE4EA;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .blog__date {
     color: #818181;
     mix-blend-mode: normal;
