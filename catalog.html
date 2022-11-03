@@ -18,7 +18,7 @@
         <a href="/" class="logo">
             <img src="img/logo.png" alt="Logo" class="logo__image">
         </a>
-        <nav class="header__menu">
+        <nav class="header__menu" aria-label="Header menu">
             <ul class="header__list undotted">
                 <li class="header__item">
                     <a href="blog.html">Blog</a>
@@ -40,19 +40,18 @@
     </header>
 
     <main>
-        <section class="breadcrumb wrapper">
-            <h1 class="breadcrumb__title">Category Products</h1>
-            <ul class="breadcrumb__list undotted">
-                <li class="breadcrumb__item">
-                    <a href="index.html" class="breadcrumb__link">Home</a>
-                </li>
-                <li class="breadcrumb__item">
-                    <p class="breadcrumb__text">Catalog</p>
-                </li>
-            </ul>
-        </section>
-
         <section class="categories wrapper">
+            <div  class="breadcrumb wrapper" aria-label="Breadcrumb">
+                <h1 class="breadcrumb__title">Category Products</h1>
+                <ul class="breadcrumb__list undotted">
+                    <li class="breadcrumb__item">
+                        <a href="index.html" class="breadcrumb__link">Home</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <p class="breadcrumb__text">Catalog</p>
+                    </li>
+                </ul>
+            </div>
             <h2 class="hidden-text">Categories</h2>
             <ul class="categories__list undotted">
                 <li class="categories__item">
