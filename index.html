@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/common.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Montserrat:wght@200;400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -299,8 +299,8 @@
             Тег audio не поддерживается вашим браузером.
         </audio>
         <div class="bg-music__controls">
-            <button class="bg-music__play button" onclick="document.getElementById('player').play()">></button>
-            <button class="bg-music__pause button" onclick="document.getElementById('player').pause()">II</button>
+            <button class="bg-music__play button" onclick="document.getElementById('player').play()" aria-label="Resume music">></button>
+            <button class="bg-music__pause button" onclick="document.getElementById('player').pause()" aria-label="Pause music">II</button>
             <!-- <button class="bg-music__volup" onclick="document.getElementById('player').volume+=0.1">VOL+</button>
             <button class="bg-music__voldown" onclick="document.getElementById('player').volume-=0.1">VOL-</button> -->
         </div> 
