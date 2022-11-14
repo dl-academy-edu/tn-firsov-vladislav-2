@@ -187,7 +187,7 @@ body {
     margin: 0px 0px 30px;
 }
 
-.categories__name:hover {
+.categories__item:hover {
     text-decoration: underline;
 }
 
