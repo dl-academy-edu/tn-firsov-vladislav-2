@@ -158,6 +158,10 @@ fieldset:disabled .radioslider-label {
     margin-right: 107px;
 }
 
+.filters__cost label {
+    position: absolute;
+}
+
 .filters__color {
     /* margin-right: 130px; */
     min-width: 198px;

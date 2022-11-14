@@ -526,6 +526,7 @@ fieldset:disabled .radio-label::before,
 .checkbox-input:disabled + .checkbox-label::before {
     opacity: 0.5;
     cursor: default;
+    pointer-events: none;
 }
 
 fieldset:disabled .radio-label.radio-label::after,
@@ -638,6 +639,10 @@ label {
     line-height: 20px;
     text-transform: uppercase;
     margin-right: 65px;
+}
+
+.pagination-link:hover a{
+    color: #AAAAAA;
 }
 
 .pagination-link:last-child {

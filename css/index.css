@@ -368,6 +368,10 @@
     display: none;
 }
 
+.modal .checkbox-label {
+    letter-spacing: -0.35px;
+}
+
 .modal__form {
     position: relative;
     background: #E5EAF8;
